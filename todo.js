@@ -3,7 +3,6 @@ $("ul").on("click", "li", function(){
     $(this).toggleClass("completed");
 });
 
-
 // Deletes a todo when the trash icon is clicked
 $("ul").on("click", "span", function(event){
     $(this).parent().fadeOut(function(){
@@ -11,7 +10,6 @@ $("ul").on("click", "span", function(event){
     });
     event.stopPropagation();
 });
-
 
 // Creates a new todo 
 $("input[type='text']").keypress(function(event){
